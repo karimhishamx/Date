@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbe7e7, #fff1eb);
+  font-family: 'Poppins', sans-serif;
+  color: #5a3a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fffaf6;
+  max-width: 420px;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1em;
+}
+
+a, button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 34px;
+  border-radius: 30px;
+  background: #d36c6c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(211,108,108,0.4);
+}
+
+input {
+  width: 80%;
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid #e6cfcf;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Surprise 🔐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<style>
+.invite-details {
+  margin-top: 25px;
+}
+
+.invite-details p {
+  margin: 10px 0;
+}
+
+.pickup {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.soft {
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+
+.highlight {
+  margin-top: 20px;
+  font-size: 1.05em;
+  font-weight: 500;
+}
+
+.love {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+.dress {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(211,108,108,0.15);
+  font-size: 0.9em;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 20px 0;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="card">
+    <h1>One last thing…</h1>
+    <p>
+      If you know the code,<br>
+      you’ll get the invitation 🦋
+    </p>
+
+    <input type="password" id="code" placeholder="Enter the code">
+    <button onclick="checkCode()">Unlock 💖</button>
+
+    <p id="error" style="display:none; color:#c94a4a;">
+      Hmm… try again 😏
+    </p>
+
+    <!-- INVITATION CONTENT -->
+    <div id="invite" style="display:none;">
+
+      <h1>🎉 You’re Invited 🎉</h1>
+
+      <p>
+        On <strong>12 February</strong>,<br>
+        We’re going to an event at<br>
+        <strong>Cairo Jazz Club – Agouza</strong><br>
+        starting at <strong>10:00 PM</strong> 🎶✨
+      </p>
+
+   <div class="invite-details">
+
+  <p class="pickup">
+     I’ll pick you up 🚗
+  </p>
+
+  <p class="soft">
+    All you have to do is get ready and smile 💖
+  </p>
+
+  <hr>
+
+  <p class="highlight">
+    This night is my way of celebrating your birthday.
+  </p>
+
+  <p class="love">
+    I love you so much ❤️❤️❤️
+  </p>
+
+  <p class="dress">
+    👑 Dress code: <strong>Birthday Queen Energy👑🦋</strong>
+  </p>
+
+</div>
+
+
+      <!-- IMAGE -->
+<img 
+  src="C:\Users\Karim-PC\Desktop\Website Folder\images\cairo-jazz-club.jpeg"
+  alt="Cairo Jazz Club – Agouza"
+  style="width:50%; border-radius:18px; margin:20px 0;"
+>
+
+      <!-- LOCATION -->
+      <p style="margin-top:10px;">
+        📍 <strong>Location</strong>
+      </p>
+      <a 
+        href="https://www.google.com/maps/search/?api=1&query=Cairo+Jazz+Club+Agouza"
+        target="_blank"
+      >
+        Open on Google Maps
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    function checkCode() {
+      const correctCode = "12021995";
+      const enteredCode = document.getElementById("code").value;
+
+      if (enteredCode === correctCode) {
+        document.getElementById("invite").style.display = "block";
+        document.getElementById("error").style.display = "none";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
